@@ -65,7 +65,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="floater.png" />
+    <Content Include="index.css" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
+    <Content Include="welcome.css" />
+    <Content Include="welcome.html" />
+    <Content Include="welcome.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

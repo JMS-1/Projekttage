@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ondrop="fallenlassen(event)" ondragover="verschiebenErlauben(event)">
+<head>
+    <title>Willkommen</title>
+
+    <link rel="stylesheet" href="welcome.css" />
+
+    <script src="welcome.js"></script>
+</head>
+<body onload="initialisieren()">
+    <h1>Willkommen!</h1>
+
+    <div class="pulsator"></div>
+
+    <div id="floater" class="floater" onmousedown="start(event)" ondragstart="nurVerschiebenErlauben(event)">
+        <img src="floater.png" />
+    </div>
+</body>
+</html>

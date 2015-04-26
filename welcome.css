@@ -1,0 +1,23 @@
+﻿body {
+    background-color: lavender;
+}
+
+.pulsator {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+    .pulsator:hover {
+        width: 110px;
+        height: 90px;
+        background-color: dodgerblue;
+    }
+
+
+.floater {
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    background-color: transparent;
+}
