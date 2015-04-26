@@ -71,6 +71,9 @@
     <Content Include="floater.png" />
     <Content Include="index.css" />
     <Content Include="index.html" />
+    <Content Include="professional.css" />
+    <Content Include="professional.html" />
+    <Content Include="professional.js" />
     <Content Include="Web.config" />
     <Content Include="welcome.css" />
     <Content Include="welcome.html" />

@@ -1,0 +1,18 @@
+﻿body {
+    background-color: ivory;
+}
+
+.testergebnis {
+    margin-left: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.ok {
+    display: none;
+}
+
+#wert12test{
+    margin-left: 0px;
+    margin-top: 4px;
+}

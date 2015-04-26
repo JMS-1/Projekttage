@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ein Formular</title>
+
+    <link rel="stylesheet" href="professional.css" />
+    <script src="professional.js"></script>
+</head>
+<body onload="initialisieren()">
+    <h1>Ein Formular mit interaktiver Prüfung</h1>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Kleinerer Wert:</td>
+                    <td><input id="wert1" onkeyup="pruefen()" /><span id="wert1test" class="testergebnis">Bitte eine Zahl eingeben.</span></td>
+                </tr>
+                <tr>
+                    <td>Größerer Wert:</td>
+                    <td><input id="wert2" onkeyup="pruefen()" /><span id="wert2test" class="testergebnis">Bitte eine Zahl eingeben.</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="wert12test" class="testergebnis">Die zweite Zahl muss größer als die erste Zahl sein.</div>
+        <input type="submit" id="senden" value="Absenden" />
+    </form>
+</body>
+</html>
