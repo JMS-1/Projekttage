@@ -65,6 +65,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="clickme.css" />
+    <Content Include="clickme.html" />
+    <Content Include="clickme.js" />
     <Content Include="floater.png" />
     <Content Include="index.css" />
     <Content Include="index.html" />

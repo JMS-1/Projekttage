@@ -3,14 +3,14 @@
 }
 
 .pulsator {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: blue;
 }
 
     .pulsator:hover {
-        width: 110px;
-        height: 90px;
+        width: 120px;
+        height: 60px;
         background-color: dodgerblue;
     }
 
