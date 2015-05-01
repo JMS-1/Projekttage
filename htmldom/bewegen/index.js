@@ -1,17 +1,22 @@
 ﻿var floater, startX, startY;
 
-function initialisieren() {
+function starten() {
     floater = document.getElementById('floater');
 }
 
 function fallenlassen(ev) {
-    floater.style.left = (ev.x - startX) + 'px';
-    floater.style.top = (ev.y - startY) + 'px';
+    ev.preventDefault();
+    ev.stopPropagation();
+
+    floater.style.left = (ev.screenX - startX) + 'px';
+    floater.style.top = (ev.screenY - startY) + 'px';
+
+    return false;
 }
 
 function start(ev) {
-    startX = ev.x - floater.offsetLeft;
-    startY = ev.y - floater.offsetTop;
+    startX = ev.screenX - floater.offsetLeft;
+    startY = ev.screenY - floater.offsetTop;
 }
 
 function verschiebenErlauben(ev) {

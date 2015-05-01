@@ -8,8 +8,8 @@ function innenKlicken() {
     alert('Autsch');
 }
 
-function mitteKlicken(ev) {
-    event.srcElement.className = 'getroffen'
+function mitteKlicken(element) {
+    element.className = 'getroffen'
 }
 
 function aussenKlicken() {

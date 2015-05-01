@@ -59,6 +59,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="htmldom\bewegen\index.css" />
+    <Content Include="htmldom\bewegen\index.html" />
+    <Content Include="htmldom\bewegen\index.js" />
     <Content Include="htmldom\eingebettet\index.css" />
     <Content Include="htmldom\eingebettet\index.html" />
     <Content Include="htmldom\erzeugen\index.css" />
@@ -70,6 +73,7 @@
     <Content Include="htmldom\einspiel\index.css" />
     <Content Include="htmldom\einspiel\index.html" />
     <Content Include="htmldom\einspiel\index.js" />
+    <Content Include="index.html" />
     <Content Include="Projekttage 2015.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -90,9 +94,6 @@
     <Content Include="professional.html" />
     <Content Include="professional.js" />
     <Content Include="Web.config" />
-    <Content Include="welcome.css" />
-    <Content Include="welcome.html" />
-    <Content Include="welcome.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

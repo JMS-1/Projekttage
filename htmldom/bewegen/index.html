@@ -1,19 +1,17 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" ondrop="fallenlassen(event)" ondragover="verschiebenErlauben(event)">
 <head>
-    <title>Willkommen</title>
+    <title>Projekttage 2015: Interaktive Web Seiten</title>
 
-    <link rel="stylesheet" href="welcome.css" />
+    <link rel="stylesheet" href="index.css" />
 
-    <script src="welcome.js"></script>
+    <script src="index.js"></script>
 </head>
-<body onload="initialisieren()">
-    <h1>Willkommen!</h1>
-
-    <div class="pulsator"></div>
+<body onload="starten()">
+    <h1>Verschiebe das UFO</h1>
 
     <div id="floater" class="floater" onmousedown="start(event)" ondragstart="nurVerschiebenErlauben(event)">
-        <img src="floater.png" />
+        <img src="../../floater.png" />
     </div>
 </body>
 </html>
