@@ -1,4 +1,4 @@
-﻿function initialisieren() {
+﻿function starten() {
 }
 
 function bewegen(ufo) {

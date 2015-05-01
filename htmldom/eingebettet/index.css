@@ -1,0 +1,20 @@
+﻿div{
+    padding: 10px;
+    float: left;
+}
+
+.aussen {
+    background-color: aliceblue;
+}
+
+.mitte {
+    background-color: bisque;
+}
+
+.innen {
+    background-color: gold;
+}
+
+.getroffen{
+    display:none;
+}

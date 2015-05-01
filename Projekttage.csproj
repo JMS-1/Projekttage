@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +59,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="htmldom\eingebettet\index.css" />
+    <Content Include="htmldom\eingebettet\index.html" />
+    <Content Include="htmldom\erzeugen\index.css" />
+    <Content Include="htmldom\erzeugen\index.html" />
+    <Content Include="htmldom\erzeugen\index.js" />
+    <Content Include="htmldom\mitjs\index.css" />
+    <Content Include="htmldom\mitjs\index.html" />
+    <Content Include="htmldom\mitjs\index.js" />
+    <Content Include="htmldom\einspiel\index.css" />
+    <Content Include="htmldom\einspiel\index.html" />
+    <Content Include="htmldom\einspiel\index.js" />
     <Content Include="Projekttage 2015.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -66,9 +79,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="clickme.css" />
-    <Content Include="clickme.html" />
-    <Content Include="clickme.js" />
     <Content Include="cssonly\bloecke\index.css" />
     <Content Include="cssonly\bloecke\index.html" />
     <Content Include="cssonly\liste\index.css" />
@@ -76,8 +86,6 @@
     <Content Include="cssonly\menu\index.css" />
     <Content Include="cssonly\menu\index.html" />
     <Content Include="floater.png" />
-    <Content Include="index.css" />
-    <Content Include="index.html" />
     <Content Include="professional.css" />
     <Content Include="professional.html" />
     <Content Include="professional.js" />
@@ -94,6 +102,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

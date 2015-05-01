@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Projekttage 2015: Interaktive Web Seiten</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="index.js"></script>
+</head>
+<body onload="starten()">
+    <h1>Eine DOM Events mit JavaScript Datei</h1>
+
+    <div class="aussen">
+        <p>Aussen<input type="button" onclick="aussenKlicken()" value="Klick mich!" /></p>
+        <div class="mitte" id="mitte">
+            <p>Mitte<input type="button" onclick="mitteKlicken(event)" value="Klick mich!" /></p>
+            <div class="innen">
+                <p>
+                    Innen<input type="button" onclick="innenKlicken()" value="Klick mich!" />
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
