@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Projekttage 2015.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -68,6 +69,12 @@
     <Content Include="clickme.css" />
     <Content Include="clickme.html" />
     <Content Include="clickme.js" />
+    <Content Include="cssonly\bloecke\index.css" />
+    <Content Include="cssonly\bloecke\index.html" />
+    <Content Include="cssonly\liste\index.css" />
+    <Content Include="cssonly\liste\index.html" />
+    <Content Include="cssonly\menu\index.css" />
+    <Content Include="cssonly\menu\index.html" />
     <Content Include="floater.png" />
     <Content Include="index.css" />
     <Content Include="index.html" />

@@ -1,0 +1,29 @@
+﻿.block {
+    float: left;
+    text-align: center;
+    margin: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+}
+
+.groesse:hover {
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.ausblenden:active {
+    visibility: hidden;
+}
+
+.verschwinden:active {
+    display: none;
+}
+
+.bild:hover {
+    background: url("../../floater.png") no-repeat left top;
+    background-position: bottom;
+    background-size: 100%;
+}
