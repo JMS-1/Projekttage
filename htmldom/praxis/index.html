@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Projekttage 2015: Interaktive Web Seiten</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="index.js"></script>
+</head>
+<body onload="starten()">
+    <h1>Ein Formular mit interaktiver Pr&uuml;fung</h1>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Kleinerer Wert:</td>
+                    <td><input id="wert1" onkeyup="pruefen()" /><span id="wert1test" class="testergebnis">Bitte eine ganze Zahl eingeben.</span></td>
+                </tr>
+                <tr>
+                    <td>Gr&ouml;&szlig;erer Wert:</td>
+                    <td><input id="wert2" onkeyup="pruefen()" /><span id="wert2test" class="testergebnis">Bitte eine ganze Zahl eingeben.</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="wert12test" class="testergebnis">Die zweite Zahl muss gr&ouml;&szlig;er als die erste Zahl sein.</div>
+        <input type="submit" id="senden" value="Absenden" />
+    </form>
+</body>
+</html>

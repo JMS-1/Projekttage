@@ -73,7 +73,16 @@
     <Content Include="htmldom\einspiel\index.css" />
     <Content Include="htmldom\einspiel\index.html" />
     <Content Include="htmldom\einspiel\index.js" />
+    <Content Include="htmldom\praxis\index.css" />
+    <Content Include="htmldom\praxis\index.html" />
+    <Content Include="htmldom\praxis\index.js" />
     <Content Include="index.html" />
+    <Content Include="life\aufbau\index.css" />
+    <Content Include="life\aufbau\index.html" />
+    <Content Include="life\aufbau\index.js" />
+    <Content Include="life\umschalten\index.css" />
+    <Content Include="life\umschalten\index.html" />
+    <Content Include="life\umschalten\index.js" />
     <Content Include="Projekttage 2015.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -90,9 +99,6 @@
     <Content Include="cssonly\menu\index.css" />
     <Content Include="cssonly\menu\index.html" />
     <Content Include="floater.png" />
-    <Content Include="professional.css" />
-    <Content Include="professional.html" />
-    <Content Include="professional.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

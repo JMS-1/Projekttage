@@ -3,7 +3,7 @@ var keinFehler = fehler + ' ok';
 
 var wert1, wert2, test1, test2, intervall, senden;
 
-function initialisieren() {
+function starten() {
     wert1 = document.getElementById('wert1');
     wert2 = document.getElementById('wert2');
 
