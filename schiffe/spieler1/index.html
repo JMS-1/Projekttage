@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html verticalmlns="http://www.w3.org/1999/xhtml" ondragover="fallenlassenVerbieten(event)">
+<head>
+    <title>Projekttage 2015: Interaktive Web Seiten</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="index.js"></script>
+</head>
+<body onload="starten()">
+    <h1>Schiffe versenken</h1>
+
+    <div class="container">
+        <div id="spielfeld" class="spielfeld">
+            <div class="zeile">
+                <div class="zelle zeilennummer">&nbsp;</div>
+                <div class="zelle spaltennummer">1</div>
+                <div class="zelle spaltennummer">2</div>
+                <div class="zelle spaltennummer">3</div>
+                <div class="zelle spaltennummer">4</div>
+                <div class="zelle spaltennummer">5</div>
+                <div class="zelle spaltennummer">6</div>
+                <div class="zelle spaltennummer">7</div>
+                <div class="zelle spaltennummer">8</div>
+                <div class="zelle spaltennummer">9</div>
+                <div class="zelle spaltennummer">10</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">A</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">B</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">C</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">D</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">E</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">F</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">G</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">H</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">I</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">J</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+        </div>
+        <div id="auswahl" class="schiffe">
+            <h2>Bitte verstecken</h2>
+
+            <div class="container">
+                <div class="pool">
+                    <div class="zeile">
+                        <div class="zelle versenkt vertikal"><img src="../../vertikal.png" class="vertikal" /></div>
+                        <div class="zelle versenkt vertikal"><img src="../../vertikal.png" class="vertikal" /></div>
+                        <div class="zelle versenkt vertikal"><img src="../../vertikal.png" class="vertikal" /></div>
+                        <div class="zelle versenkt vertikal"><img src="../../vertikal.png" class="vertikal" /></div>
+                        <div class="zelle versenkt vertikal"><img src="../../vertikal.png" class="vertikal" /></div>
+                    </div>
+                    <div class="zeile">
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                    </div>
+                    <div class="zeile">
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                    </div>
+                    <div class="zeile">
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                    </div>
+                    <div class="zeile">
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="pool">
+                    <div class="zeile">
+                        <div class="zelle versenkt horizontal"><img src="../../horizontal.png" class="horizontal" /></div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                    </div>
+                    <div class="zeile">
+                        <div class="zelle versenkt horizontal"><img src="../../horizontal.png" class="horizontal" /></div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                    </div>
+                    <div class="zeile">
+                        <div class="zelle versenkt horizontal"><img src="../../horizontal.png" class="horizontal" /></div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                    </div>
+                    <div class="zeile">
+                        <div class="zelle versenkt horizontal"><img src="../../horizontal.png" class="horizontal" /></div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                    </div>
+                    <div class="zeile">
+                        <div class="zelle versenkt horizontal"><img src="../../horizontal.png" class="horizontal" /></div>
+                        <div class="zelle versenkt">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                        <div class="zelle leer">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="starter">
+                <input type="button" value="Anfangen" id="starter" disabled="disabled" onclick="los()" />
+            </div>
+        </div>
+    </div>
+
+    <div class="legende">
+        <h2>Bedeutung der Farben</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="unbenutzt">noch nicht beschossen</td>
+                </tr>
+                <tr>
+                    <td class="daneben">kein Treffer</td>
+                </tr>
+                <tr>
+                    <td class="treffer">Treffer</td>
+                </tr>
+                <tr>
+                    <td class="versenkt">Treffer und versenkt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

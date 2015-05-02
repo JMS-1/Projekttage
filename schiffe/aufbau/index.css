@@ -1,0 +1,41 @@
+﻿.spielfeld {
+    display: table;
+    border-collapse: collapse;
+    width: 500px;
+    height: 500px;
+}
+
+.zeile {
+    display: table-row;
+}
+
+.zelle {
+    display: table-cell;
+    border: 1px solid black;
+    min-height: 1em;
+    min-width: 1em;
+}
+
+.spaltennummer, .zeilennummer {
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.unbenutzt {
+    background-color: lightseagreen;
+}
+
+.daneben {
+    background-color: yellow;
+}
+
+.treffer {
+    background-color: orangered;
+}
+
+.versenkt {
+    background-color: red;
+}
+
+

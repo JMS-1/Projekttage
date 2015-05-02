@@ -59,6 +59,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="horizontal.png" />
     <Content Include="htmldom\bewegen\index.css" />
     <Content Include="htmldom\bewegen\index.html" />
     <Content Include="htmldom\bewegen\index.js" />
@@ -111,6 +112,13 @@
     <Content Include="cssonly\menu\index.css" />
     <Content Include="cssonly\menu\index.html" />
     <Content Include="floater.png" />
+    <Content Include="schiffe\aufbau\index.css" />
+    <Content Include="schiffe\aufbau\index.html" />
+    <Content Include="schiffe\aufbau\index.js" />
+    <Content Include="schiffe\spieler1\index.css" />
+    <Content Include="schiffe\spieler1\index.html" />
+    <Content Include="schiffe\spieler1\index.js" />
+    <Content Include="vertikal.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
