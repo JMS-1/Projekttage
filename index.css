@@ -1,0 +1,12 @@
+﻿html {
+    position:relative;
+}
+
+#vorschau {       
+    background-color: beige;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 100px;
+    left: 200px;    
+}

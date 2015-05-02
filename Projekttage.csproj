@@ -77,7 +77,9 @@
     <Content Include="htmldom\praxis\index.css" />
     <Content Include="htmldom\praxis\index.html" />
     <Content Include="htmldom\praxis\index.js" />
+    <Content Include="index.css" />
     <Content Include="index.html" />
+    <Content Include="index.js" />
     <Content Include="life\algorithmus\index.css" />
     <Content Include="life\algorithmus\index.html" />
     <Content Include="life\algorithmus\index.js" />
