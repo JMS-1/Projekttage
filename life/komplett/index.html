@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Projekttage 2015: Interaktive Web Seiten</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="index.js"></script>
+</head>
+<body onload="starten()">
+    <h1><a href="http://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens" target="_blank">Conways Spiel des Lebens</a></h1>
+    <div id="spielfeld" class="spielfeld" data-zeilen="50" data-spalten="50"></div>
+    <br />
+    <input type="button" id="step" value="N&auml;chste Generation" onclick="naechsteGeneration()" />
+    <input type="button" id="run" value="Immer weiter (an/aus)" onclick="laufenLassenUmschalten()" />
+    <input type="button" id="clear" value="Leeren" onclick="spielfeldLoeschen()" />
+    <input type="button" id="random" value="Zuf&auml;llig f&uuml;llen" onclick="spielfeldFuellen()" />
+    <br />
+    <br />
+    Generationen pro Sekunde (zwischen 1 und 1000): <input type="text" id="interval" value="10" size="3" />
+    <br />
+    Im Moment (Schritte pro Sekunde): <span id="schritte">0</span>
+</body>
+</html>

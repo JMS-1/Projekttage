@@ -27,7 +27,7 @@ function pruefen() {
     test1.className = fehler;
     test2.className = fehler;
     intervall.className = keinFehler;
-    senden.setAttribute('disabled');
+    senden.setAttribute('disabled', 'disabled');
 
     if (parseInt(eingabe1) == eingabe1)
         test1.className = keinFehler;
