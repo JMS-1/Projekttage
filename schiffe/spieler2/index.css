@@ -1,0 +1,101 @@
+﻿html {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.spielfeld {
+    display: table;
+    border-collapse: collapse;
+    width: 500px;
+    height: 500px;
+}
+
+.zeile {
+    display: table-row;
+}
+
+.zelle {
+    display: table-cell;
+    border: 1px solid black;
+    min-height: 1em;
+    min-width: 1em;
+}
+
+.spaltennummer, .zeilennummer {
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.unbenutzt {
+    background-color: lightseagreen;
+}
+
+.daneben {
+    background-color: yellow;
+}
+
+.treffer {
+    background-color: orangered;
+}
+
+.versenkt {
+    background-color: red;
+}
+
+.schiffe {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.spielfeld, .schiffe {
+    float: left;
+}
+
+.container {
+    overflow: hidden;
+}
+
+    .container .schiffe {
+        width: 330px;
+    }
+
+.pool {
+    display: table;
+    border-collapse: collapse;
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin: 2px;
+}
+
+.leer {
+    border: none;
+}
+
+.zelle.horizontal {
+    width: 30px;
+    height: 30px;
+}
+
+.zelle.vertikal {
+    width: 30px;
+    height: 30px;
+}
+
+
+img.horizontal {
+    width: 30px;
+}
+
+img.vertikal {
+    height: 30px;
+}
+
+.starter {
+    margin-top: 10px;
+    clear: left;
+}

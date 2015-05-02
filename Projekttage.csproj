@@ -115,9 +115,18 @@
     <Content Include="schiffe\aufbau\index.css" />
     <Content Include="schiffe\aufbau\index.html" />
     <Content Include="schiffe\aufbau\index.js" />
+    <Content Include="schiffe\komplett\index.css" />
+    <Content Include="schiffe\komplett\index.html" />
+    <Content Include="schiffe\komplett\index.js" />
+    <Content Include="schiffe\mittipp\index.css" />
+    <Content Include="schiffe\mittipp\index.html" />
+    <Content Include="schiffe\mittipp\index.js" />
     <Content Include="schiffe\spieler1\index.css" />
     <Content Include="schiffe\spieler1\index.html" />
     <Content Include="schiffe\spieler1\index.js" />
+    <Content Include="schiffe\spieler2\index.css" />
+    <Content Include="schiffe\spieler2\index.html" />
+    <Content Include="schiffe\spieler2\index.js" />
     <Content Include="vertikal.png" />
     <Content Include="Web.config" />
   </ItemGroup>
