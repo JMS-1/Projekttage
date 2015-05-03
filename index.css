@@ -1,12 +1,38 @@
 ﻿html {
-    position:relative;
+    position: relative;
+    color: black;
 }
 
-#vorschau {       
+#vorschau {
     background-color: beige;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     position: absolute;
-    top: 100px;
-    left: 200px;    
+    top: 40px;
+    left: 400px;
 }
+
+li {
+    margin-bottom: 4px;
+    list-style: circle;
+}
+
+    li:hover {
+        list-style: disc;
+    }
+
+.code {
+    margin-left: 10px;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 4px 4px;
+    box-shadow: gray 1px 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:visited {
+        color: black;
+    }
