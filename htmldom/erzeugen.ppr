@@ -1,0 +1,29 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\Backup\Software\Current\GIT\Projekttage\htmldom\erzeugen
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+erzeugen
+	+erzeugen
+		erzeugen\index.css
+		erzeugen\index.html
+		erzeugen\index.js
+[Open project files]
+0=erzeugen\index.html
+[Selected Project Files]
+Main=
+Selected=erzeugen\index.html
+[erzeugen\index.html]
+TopLine=1
+Caret=1,1

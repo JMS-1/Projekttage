@@ -1,0 +1,29 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\Backup\Software\Current\GIT\Projekttage\htmldom\einspiel
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+einspiel
+	+einspiel
+		einspiel\index.css
+		einspiel\index.html
+		einspiel\index.js
+[Open project files]
+0=einspiel\index.html
+[Selected Project Files]
+Main=
+Selected=einspiel\index.html
+[einspiel\index.html]
+TopLine=1
+Caret=1,1
