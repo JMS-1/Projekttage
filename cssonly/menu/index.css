@@ -1,4 +1,4 @@
-﻿.auswahl {
+.auswahl {
     display: inline;
     position:relative;
     font-style: italic;
@@ -24,22 +24,3 @@
         top: 0px;
         left: 0px;
     }
-/*
-.auswahl {
-    float: left;
-}
-
-    .auswahl ul {
-        visibility: collapse;
-        border: 1px dashed black;
-    }
-
-    .auswahl:active ul {
-        visibility: visible;
-    }
-
-li:hover {
-    font-weight: bold;
-}
-
-    */
