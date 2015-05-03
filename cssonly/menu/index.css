@@ -1,6 +1,6 @@
 .auswahl {
     display: inline;
-    position:relative;
+    position: relative;
     font-style: italic;
 }
 
@@ -14,13 +14,13 @@
         left: 10px;
     }
 
-    .tooltip{
-        font-style: normal;
-        padding: 2px;
-        border: 1px dashed black;
-        width: 10em;
-        background: white;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
+.tooltip {
+    font-style: normal;
+    padding: 2px;
+    border: 1px dashed black;
+    width: 10em;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
