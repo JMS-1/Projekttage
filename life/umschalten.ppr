@@ -1,0 +1,29 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\Backup\Software\Current\GIT\Projekttage\life\umschalten
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+umschalten
+	+umschalten
+		umschalten\index.css
+		umschalten\index.html
+		umschalten\index.js
+[Open project files]
+0=umschalten\index.html
+[Selected Project Files]
+Main=
+Selected=umschalten\index.html
+[umschalten\index.html]
+TopLine=1
+Caret=1,1
