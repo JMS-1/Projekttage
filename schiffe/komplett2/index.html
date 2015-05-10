@@ -158,20 +158,25 @@
 
     <div class="auswahl">
         <div>
-            <input type="radio" name="größe" value="2" id="schiff2" />
-            <label for="schiff2">Patrollienboot</label>
-            <input type="radio" name="größe" value="3" id="schiff3" />
-            <label for="schiff3">Kreuzer (2)</label>
-            <input type="radio" name="größe" value="4" id="schiff4" />
+            <input type="radio" name="größe" value="2A" id="schiff2" autocomplete="off" />
+            <label for="schiff2">Patrouillenboote</label>
+            <input type="radio" name="größe" value="3A" id="schiff3A" autocomplete="off" />
+            <label for="schiff3A">Erster Kreuzer</label>
+            <input type="radio" name="größe" value="3B" id="schiff3B" autocomplete="off" />
+            <label for="schiff3B">Zweiter Kreuzer</label>
+            <input type="radio" name="größe" value="4A" id="schiff4" autocomplete="off" />
             <label for="schiff4">Schlachtschiff</label>
-            <input type="radio" name="größe" value="5" checked="checked" id="schiff5" />
+            <input type="radio" name="größe" value="5A" id="schiff5" autocomplete="off" />
             <label for="schiff5">Flugzeugträger</label>
         </div>
         <div>
-            <input type="radio" name="orientierung" value="H" checked="checked" id="orientierungH" />
+            <input type="radio" name="orientierung" value="H" id="orientierungH" autocomplete="off" />
             <label for="orientierungH">Horizontal</label>
-            <input type="radio" name="orientierung" value="V" checked="checked" id="orientierungV" />
+            <input type="radio" name="orientierung" value="V" id="orientierungV" autocomplete="off" />
             <label for="orientierungV">Vertikal</label>
+        </div>
+        <div>
+            <input type="button" id="start" value="Anfangen" />
         </div>
     </div>
 
