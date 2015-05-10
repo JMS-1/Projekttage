@@ -29,22 +29,22 @@ li {
     box-shadow: gray 1px 1px;
 }
 
-a {
+a:not(.extra) {
     text-decoration: none;
 }
 
-    a:link {
+    a:not(.extra):link {
         color: black;
     }
 
-    a:visited {
+    a:not(.extra):visited {
         color: black;
     }
 
-    a:hover {
+    a:not(.extra):hover {
         color: black;
     }
 
-    a:active {
+    a:not(.extra):active {
         color: black;
     }
