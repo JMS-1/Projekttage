@@ -99,6 +99,7 @@
     <Content Include="life\umschalten\index.html" />
     <Content Include="life\umschalten\index.js" />
     <Content Include="Projekttage 2015.docx" />
+    <Content Include="Projekttage 2015.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -117,6 +118,8 @@
     <Content Include="schiffe\aufbau\index.css" />
     <Content Include="schiffe\aufbau\index.html" />
     <Content Include="schiffe\aufbau\index.js" />
+    <Content Include="schiffe\komplett2\controller.js" />
+    <Content Include="schiffe\komplett2\modelle.js" />
     <Content Include="schiffe\komplett\index.css" />
     <Content Include="schiffe\komplett\index.html" />
     <Content Include="schiffe\komplett\index.js" />

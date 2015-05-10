@@ -5,179 +5,191 @@
 
     <link rel="stylesheet" href="index.css" />
 
+    <script src="modelle.js"></script>
+    <script src="controller.js"></script>
     <script src="index.js"></script>
 </head>
 <body onload="starten()">
     <h1>Schiffe versenken</h1>
 
-    <div id="spielfeld" class="spielfeld">
-        <div class="zeile">
-            <div class="zelle zeilennummer">&nbsp;</div>
-            <div class="zelle spaltennummer">1</div>
-            <div class="zelle spaltennummer">2</div>
-            <div class="zelle spaltennummer">3</div>
-            <div class="zelle spaltennummer">4</div>
-            <div class="zelle spaltennummer">5</div>
-            <div class="zelle spaltennummer">6</div>
-            <div class="zelle spaltennummer">7</div>
-            <div class="zelle spaltennummer">8</div>
-            <div class="zelle spaltennummer">9</div>
-            <div class="zelle spaltennummer">10</div>
+    <div class="container">
+        <div id="spielfeld" class="spielfeld">
+            <div class="zeile">
+                <div class="zelle zeilennummer">&nbsp;</div>
+                <div class="zelle spaltennummer">1</div>
+                <div class="zelle spaltennummer">2</div>
+                <div class="zelle spaltennummer">3</div>
+                <div class="zelle spaltennummer">4</div>
+                <div class="zelle spaltennummer">5</div>
+                <div class="zelle spaltennummer">6</div>
+                <div class="zelle spaltennummer">7</div>
+                <div class="zelle spaltennummer">8</div>
+                <div class="zelle spaltennummer">9</div>
+                <div class="zelle spaltennummer">10</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">A</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">B</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">C</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">D</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">E</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">F</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">G</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">H</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">I</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
+            <div class="zeile">
+                <div class="zelle zeilennummer">J</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+                <div class="zelle">&nbsp;</div>
+            </div>
         </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">A</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">B</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">C</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">D</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">E</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">F</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">G</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">H</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">I</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-        </div>
-        <div class="zeile">
-            <div class="zelle zeilennummer">J</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
-            <div class="zelle">&nbsp;</div>
+
+        <div class="auswahl">
+            <h2>Gr&ouml;&szlig;e &amp; Orientierung auswählen und positionieren</h2>
+            <div>
+                <input type="radio" name="größe" value="2A" id="schiff2" autocomplete="off" />
+                <label for="schiff2">Patrouillenboot</label>
+                <input type="radio" name="größe" value="3A" id="schiff3A" autocomplete="off" />
+                <label for="schiff3A">Erster Kreuzer</label>
+                <input type="radio" name="größe" value="3B" id="schiff3B" autocomplete="off" />
+                <label for="schiff3B">Zweiter Kreuzer</label>
+                <input type="radio" name="größe" value="4A" id="schiff4" autocomplete="off" />
+                <label for="schiff4">Schlachtschiff</label>
+                <input type="radio" name="größe" value="5A" id="schiff5" autocomplete="off" />
+                <label for="schiff5">Flugzeugträger</label>
+            </div>
+            <div>
+                <input type="radio" name="orientierung" value="H" id="orientierungH" autocomplete="off" />
+                <label for="orientierungH">Horizontal</label>
+                <input type="radio" name="orientierung" value="V" id="orientierungV" autocomplete="off" />
+                <label for="orientierungV">Vertikal</label>
+            </div>
+            <div>
+                <input type="button" id="start" value="Anfangen" />
+            </div>
         </div>
     </div>
 
-    <div class="auswahl">
-        <div>
-            <input type="radio" name="größe" value="2A" id="schiff2" autocomplete="off" />
-            <label for="schiff2">Patrouillenboote</label>
-            <input type="radio" name="größe" value="3A" id="schiff3A" autocomplete="off" />
-            <label for="schiff3A">Erster Kreuzer</label>
-            <input type="radio" name="größe" value="3B" id="schiff3B" autocomplete="off" />
-            <label for="schiff3B">Zweiter Kreuzer</label>
-            <input type="radio" name="größe" value="4A" id="schiff4" autocomplete="off" />
-            <label for="schiff4">Schlachtschiff</label>
-            <input type="radio" name="größe" value="5A" id="schiff5" autocomplete="off" />
-            <label for="schiff5">Flugzeugträger</label>
-        </div>
-        <div>
-            <input type="radio" name="orientierung" value="H" id="orientierungH" autocomplete="off" />
-            <label for="orientierungH">Horizontal</label>
-            <input type="radio" name="orientierung" value="V" id="orientierungV" autocomplete="off" />
-            <label for="orientierungV">Vertikal</label>
-        </div>
-        <div>
-            <input type="button" id="start" value="Anfangen" />
-        </div>
+    <div>
+        <input type="button" id="neustart" value="Neu Starten" />
+        <input type="checkbox" id="tippAnzeige" />
+        <label for="tippAnzeige">Tipp anzeigen</label>
+        <span id="tipp">[tbd]</span>
     </div>
 
     <div>

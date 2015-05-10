@@ -40,6 +40,23 @@
 
 .auswahl{
     border: 1px solid black;
+    background-color: #f0f0f0;
     padding: 4px;
-    background-color: aqua;
+}
+
+.auswahl > div{
+    margin: 10px;
+}
+
+.auswahl > h2{
+    text-align: center;
+}
+
+.container>div{
+    float: left;
+    margin: 10px;
+}
+
+.container + div{
+    clear: both;
 }

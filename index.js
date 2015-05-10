@@ -1,5 +1,5 @@
 ﻿function starten() {
-    var alleVerweise = document.querySelectorAll('a');
+    var alleVerweise = document.querySelectorAll('a:not(.code):not(.extra)');
     var rahmen = document.getElementById('vorschau');
 
     function zeigen() {
@@ -27,7 +27,7 @@
             verweis.parentElement.innerHTML += add;
     }
 
-    alleVerweise = document.querySelectorAll('a:not(.code)');
+    alleVerweise = document.querySelectorAll('a:not(.code):not(.extra)');
 
     for (var i = 0; i < alleVerweise.length; i++) {
         var verweis = alleVerweise[i];
