@@ -1,0 +1,26 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\Backup\Software\Current\GIT\Projekttage\schiffe\komplett2
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+komplett2
+	-komplett2
+		komplett2\controller.js
+		komplett2\index.css
+		komplett2\index.html
+		komplett2\index.js
+		komplett2\modelle.js
+[Open project files]
+[Selected Project Files]
+Main=
