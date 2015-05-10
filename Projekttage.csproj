@@ -123,9 +123,9 @@
     <Content Include="schiffe\mittipp\index.css" />
     <Content Include="schiffe\mittipp\index.html" />
     <Content Include="schiffe\mittipp\index.js" />
-    <Content Include="schiffe\spieler1v2\index.css" />
-    <Content Include="schiffe\spieler1v2\index.html" />
-    <Content Include="schiffe\spieler1v2\index.js" />
+    <Content Include="schiffe\komplett2\index.css" />
+    <Content Include="schiffe\komplett2\index.html" />
+    <Content Include="schiffe\komplett2\index.js" />
     <Content Include="schiffe\spieler1\index.css" />
     <Content Include="schiffe\spieler1\index.html" />
     <Content Include="schiffe\spieler1\index.js" />
