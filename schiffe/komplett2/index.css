@@ -38,25 +38,32 @@
     background-color: red;
 }
 
-.auswahl{
+.auswahl {
     border: 1px solid black;
     background-color: #f0f0f0;
     padding: 4px;
 }
 
-.auswahl > div{
-    margin: 10px;
-}
+    .auswahl > div {
+        margin: 10px;
+    }
 
-.auswahl > h2{
-    text-align: center;
-}
+    .auswahl > h2 {
+        text-align: center;
+    }
 
-.container>div{
+.container > div {
     float: left;
     margin: 10px;
 }
 
-.container + div{
+.container + div {
     clear: both;
+}
+
+#tippAnzeige:not(:checked) + label + #tipp {
+    display: none;
+}
+
+#tippAnzeige:checked + label + #tipp {
 }

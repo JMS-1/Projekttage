@@ -79,13 +79,10 @@ function SpielfeldController(modell, anzeige, auswahl, start, neustart, tippScha
     // Aktualisiert die Anzeige für den Tipp
     function tippAnzeige() {
         tipp.textContent = '(Anzahl der Treffer in der Umgebung: ' + modell.trefferImUmfeld + ')';
-        tipp.style.display = tippSchalter.checked ? '' : 'none';
     }
 
-    // Modell mit der Oberfläche verbinden
-    modell.aufbauAbgeschlossen = startfreigabe;
-    modell.tippVerändert = tippAnzeige;
-    modell.modusVerändert = function () {
+    // Der Spielmodus wurde verändert, etwa weil das Spiel gewonnen wurde
+    function spielModusVerändert() {
         switch (modell.modus) {
             case SpielModus.aufbauen:
                 auswahl.style.display = '';
@@ -99,6 +96,11 @@ function SpielfeldController(modell, anzeige, auswahl, start, neustart, tippScha
         }
     }
 
+    // Modell mit der Oberfläche verbinden
+    modell.modusVerändert = spielModusVerändert;
+    modell.aufbauAbgeschlossen = startfreigabe;
+    modell.tippVerändert = tippAnzeige;
+
     // Setzt die Oberfläche auf den Anfangszustand zurück.
     function neuStarten() {
         tippSchalter.checked = false;
@@ -107,7 +109,6 @@ function SpielfeldController(modell, anzeige, auswahl, start, neustart, tippScha
     }
 
     // Oberfläche mit dem Modell verbinden
-    tippSchalter.onchange = tippAnzeige;
 
     start.onclick = function () {
         modell.spielStarten();
