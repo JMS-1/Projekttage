@@ -61,9 +61,10 @@
     clear: both;
 }
 
-#tippAnzeige:not(:checked) + label + #tipp {
+#tippAnzeige:not(:checked) ~ #tipp {
     display: none;
 }
 
-#tippAnzeige:checked + label + #tipp {
+/* Das braucht wohl der Internet Explorer 11 */
+#tippAnzeige:checked ~ #tipp {
 }
