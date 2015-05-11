@@ -72,11 +72,9 @@ SchiffModell.prototype.kannErsetzen = function (schiff) {
 
 // Prüft, ob ein Schiff gerade eben durch einen weiteren Treffer versenkt wurde
 SchiffModell.prototype.wurdeGeradeVersenkt = function () {
-    for (var i = 0; i < this.zellen.length; i++)
-        if (this.zellen[i].zustand != ZustandZelle.treffer)
-            return false;
-
-    return true;
+    return this.zellen.every(function (zelle) {
+        return zelle.zustand == ZustandZelle.treffer;
+    });
 }
 
 // Der Zustand des Spiels
@@ -127,9 +125,10 @@ SpielfeldModell.prototype.versteckeSchiff = function (zelle) {
                 return;
 
     // Das Schiff an seiner bisherigen Aufstellung entfernen
-    for (var zs = 0; zs < this.zellen.length; zs++)
-        if (schiff.istIdentitisch(this.zellen[zs].schiff))
-            this.zellen[zs].setzeSchiff(null);
+    this.zellen.forEach(function (zelle) {
+        if (schiff.istIdentitisch(zelle.schiff))
+            zelle.setzeSchiff(null);
+    });
 
     // Das Schiff an der neuen Aufstellung einsetzn
     for (var z = 0; z < schiff.höhe; z++)
@@ -190,14 +189,18 @@ SpielfeldModell.prototype.prüfeAufTreffer = function (zelle) {
         return;
 
     // Alle Zellen des Schiffs werden als versenkt markiert
-    for (var zs = 0; zs < schiff.zellen.length; zs++)
-        schiff.zellen[zs].setzeZustand(ZustandZelle.versenkt);
+    schiff.zellen.forEach(function (zelle) {
+        zelle.setzeZustand(ZustandZelle.versenkt);
+    });
+
+    // Prüft eine Zelle, ob diese entweder leer ist oder zu einem versenkten Schiff gehört
+    function istLeerOderVersenkt(zelle) {
+        return (zelle.schiff == null) || (zelle.zustand == ZustandZelle.versenkt);
+    }
 
     // Wenn alle Schiffe versenkt sind, ist das Spiel zu Ende
-    for (var zs = 0; zs < this.zellen.length; zs++)
-        if (this.zellen[zs].schiff != null)
-            if (this.zellen[zs].zustand != ZustandZelle.versenkt)
-                return;
+    if (!this.zellen.every(istLeerOderVersenkt))
+        return;
 
     this.modus = SpielModus.fertig;
 
@@ -223,9 +226,10 @@ SpielfeldModell.prototype.allesVersteckt = function () {
     var versteckt = 0;
 
     // Wir zählen einfach die Anzahl der Zellen, die mit einem Schiff verbunden sind, maximal gibt es 5 + 4 + 2 * 3 + 2 = 17
-    for (var zs = 0; zs < this.zellen.length; zs++)
-        if (this.zellen[zs].schiff != null)
+    this.zellen.forEach(function (zelle) {
+        if (zelle.schiff != null)
             versteckt += 1;
+    });
 
     return (versteckt == 17);
 }
@@ -236,15 +240,14 @@ SpielfeldModell.prototype.spielStarten = function () {
         return;
 
     // Alle Zellen werden nun in den Spielzustand versetzt
-    for (var zs = 0; zs < this.zellen.length; zs++) {
-        var zelle = this.zellen[zs];
+    this.zellen.forEach(function (zelle) {
         zelle.setzeZustand(ZustandZelle.nichtGeprüft);
 
         // Damit nachher die Auswertung einfacher ist merken wir uns zu jedem Schiff alle Zellen, auf denen es steht
         var schiff = zelle.schiff;
         if (schiff != null)
             schiff.zellen.push(zelle);
-    }
+    });
 
     // Nun nur noch den Ratemodus aktivieren
     this.modus = SpielModus.spielen;
@@ -257,8 +260,9 @@ SpielfeldModell.prototype.spielStarten = function () {
 // Noch einmal ganz von vorne beginnen
 SpielfeldModell.prototype.neuStarten = function () {
     // Alle Zellen werden nun in den Anfangszustand versetzt
-    for (var zs = 0; zs < this.zellen.length; zs++) 
-        this.zellen[zs].setzeSchiff(null);
+    this.zellen.forEach(function (zelle) {
+        zelle.setzeSchiff(null);
+    });
 
     // Zurück zum Anfang
     this.modus = SpielModus.aufbauen;
