@@ -59,16 +59,13 @@
     overflow: hidden;
 }
 
-    .container .schiffe {
-        width: 400px;
-    }
-
 .leer {
     border: none;
 }
 
 .pool {
     border: 1px dashed red;
+    width: 200px;
     padding: 2px;
     margin: 2px;
     float: left;
