@@ -129,6 +129,11 @@
     <Content Include="schiffe\komplett2\index.css" />
     <Content Include="schiffe\komplett2\index.html" />
     <Content Include="schiffe\komplett2\index.js" />
+    <Content Include="schiffe\schiffH.png" />
+    <Content Include="schiffe\schiffV.png" />
+    <Content Include="schiffe\spieler1B\index.css" />
+    <Content Include="schiffe\spieler1B\index.html" />
+    <Content Include="schiffe\spieler1B\index.js" />
     <Content Include="schiffe\spieler1\index.css" />
     <Content Include="schiffe\spieler1\index.html" />
     <Content Include="schiffe\spieler1\index.js" />
