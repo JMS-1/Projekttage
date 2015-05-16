@@ -98,6 +98,7 @@
     <Content Include="life\umschalten\index.css" />
     <Content Include="life\umschalten\index.html" />
     <Content Include="life\umschalten\index.js" />
+    <Content Include="markt.html" />
     <Content Include="Projekttage 2015.docx" />
     <Content Include="Projekttage 2015.pdf" />
     <None Include="Web.Debug.config">
