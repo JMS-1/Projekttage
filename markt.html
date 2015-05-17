@@ -18,9 +18,40 @@
         .smallLink {
             font-size: small;
         }
+
+        .zeit {
+            border: 1px solid lightgray;
+            border-radius: 2px 2px 2px;
+            font-size: small;
+            float: right;
+            padding: 2px;
+        }
     </style>
+    <script>
+        function start() {
+            var start = new Date();
+            var anzeige = document.getElementById('zeit');
+
+            function zeitAnzeige() {
+                var vergangen = Math.round((new Date() - start) / 1000);
+                var minuten = Math.floor(vergangen / 60).toString()
+                var sekunden = (vergangen % 60).toString();
+
+                if (minuten.length == 1)
+                    minuten = '0' + minuten;
+                if (sekunden.length == 1)
+                    sekunden = '0' + sekunden;
+
+                anzeige.textContent = minuten + ':' + sekunden;
+
+                window.setTimeout(zeitAnzeige, 1000);
+            }
+
+            zeitAnzeige();
+        }
+    </script>
 </head>
-<body>
+<body onload="start()">
     <h1>Projekttage 2015 im Gymnasium am Ölberg in Oberpleis</h1>
     <h2>Interaktive Web Seiten mit JavaScript - Übersicht für den Projektmarkt</h2>
     <div>
@@ -55,6 +86,9 @@
     </div>
     <div>
         <a href="index.html" target="_blank" class="smallLink">Zur Projektseite</a>
+    </div>
+    <div class="zeit" id="zeit">
+        00:00
     </div>
 </body>
 </html>
