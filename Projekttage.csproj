@@ -102,6 +102,8 @@
     <Content Include="Projekttage 2015.docx" />
     <Content Include="Projekttage 2015.pdf" />
     <Content Include="Flyer\Übung 01.docx" />
+    <Content Include="Flyer\Übung 02.docx" />
+    <Content Include="Flyer\Übung 03.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
