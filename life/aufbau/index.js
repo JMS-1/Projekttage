@@ -2,7 +2,7 @@
 var cssTot = 'zelle';
 
 // Die folgenden Variablen werden gesetzt, sobald die Seite geladen ist
-var schritteInfo, intervall, alleZellen, zeilen, spalten
+var schritteInfo, intervall, alleZellen, zeilen, spalten;
 
 // Diese Methode wird Aufgerufen, wenn die HTML Seite komplett geladen ist
 function starten() {
