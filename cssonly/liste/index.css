@@ -2,13 +2,13 @@
     list-style: circle;
 }
 
-li:hover{
-    list-style: disc;
-    font-weight: bold;
-    color: green;
-    font-style: italic;
-}
+    li:hover {
+        list-style: disc;
+        font-weight: bold;
+        color: green;
+        font-style: italic;
+    }
 
-li:active{
-    list-style: none;
-}
+    li:active {
+        list-style: none;
+    }

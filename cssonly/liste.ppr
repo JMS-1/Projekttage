@@ -20,9 +20,13 @@ liste
 		liste\index.html
 [Open project files]
 0=liste\index.html
+1=liste\index.css
 [Selected Project Files]
 Main=
-Selected=liste\index.html
+Selected=liste\index.css
 [liste\index.html]
 TopLine=1
 Caret=1,1
+[liste\index.css]
+TopLine=1
+Caret=21,2
