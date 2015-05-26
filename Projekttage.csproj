@@ -104,6 +104,8 @@
     <Content Include="Flyer\Übung 01.docx" />
     <Content Include="Flyer\Übung 02.docx" />
     <Content Include="Flyer\Übung 03.docx" />
+    <Content Include="Flyer\Übung 04.docx" />
+    <Content Include="Flyer\Übung 05.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
