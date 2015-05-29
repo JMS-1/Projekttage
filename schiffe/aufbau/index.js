@@ -19,8 +19,5 @@ function starten() {
     // Nur eine kleine Sicherheitsprüfung, ob wir das auch alles richtig gemacht haben
     if (alleZellen.length != 100) {
         alert('Komisches Schiffe versenken mit ' + alleZellen.length + ' Feldern - da muss ich leider passen!');
-
-        // Da brauchen wir erst gar nicht weiter zu machen
-        return;
     }
 }
