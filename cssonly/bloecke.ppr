@@ -20,9 +20,13 @@ bloecke
 		bloecke\index.html
 [Open project files]
 0=bloecke\index.html
+1=bloecke\index.css
 [Selected Project Files]
 Main=
-Selected=bloecke\index.html
+Selected=bloecke\index.css
 [bloecke\index.html]
 TopLine=1
 Caret=27,9
+[bloecke\index.css]
+TopLine=1
+Caret=2,2

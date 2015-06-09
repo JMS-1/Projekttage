@@ -1,26 +1,23 @@
 .auswahl {
-    display: inline;
-    position: relative;
-    font-style: italic;
+	display: inline;
+	position: relative;
+	font-style: italic;
 }
-
-    .auswahl div {
-        visibility: collapse;
-    }
-
-    .auswahl:hover div {
-        visibility: visible;
-        top: 10px;
-        left: 10px;
-    }
-
 .tooltip {
-    font-style: normal;
-    padding: 2px;
-    border: 1px dashed black;
-    width: 10em;
-    background-color: white;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+	font-style: normal;
+	padding: 2px;
+	border: 1px dashed black;
+	width: 10em;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}
+.auswahl div {
+	visibility: collapse;
+}
+.auswahl:hover div {
+	visibility: visible;
+	top: 10px;
+	left: 10px;
 }

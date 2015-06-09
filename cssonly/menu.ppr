@@ -26,7 +26,7 @@ Main=
 Selected=menu\index.html
 [menu\index.html]
 TopLine=1
-Caret=1,1
+Caret=22,16
 [menu\index.css]
 TopLine=1
-Caret=1,3
+Caret=2,17
