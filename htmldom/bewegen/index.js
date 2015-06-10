@@ -1,4 +1,4 @@
-﻿var floater, startX, startY;
+var floater, startX, startY;
 
 function starten() {
     floater = document.getElementById('floater');

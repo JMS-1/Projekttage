@@ -1,14 +1,12 @@
-﻿.testergebnis {
-    margin-left: 10px;
-    font-weight: bold;
-    color: red;
+.testergebnis {
+	margin-left: 10px;
+	font-weight: bold;
+	color: red;
 }
-
 .ok {
-    display: none;
+	display: none;
 }
-
-#wert12test{
-    margin-left: 0px;
-    margin-top: 4px;
+#wert12test {
+	margin-left: 0px;
+	margin-top: 4px;
 }

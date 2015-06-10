@@ -21,9 +21,17 @@ einspiel
 		einspiel\index.js
 [Open project files]
 0=einspiel\index.html
+1=einspiel\index.css
+2=einspiel\index.js
 [Selected Project Files]
 Main=
-Selected=einspiel\index.html
+Selected=einspiel\index.js
 [einspiel\index.html]
 TopLine=1
+Caret=86,14
+[einspiel\index.css]
+TopLine=1
 Caret=1,1
+[einspiel\index.js]
+TopLine=1
+Caret=59,8

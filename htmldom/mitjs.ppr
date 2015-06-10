@@ -22,12 +22,16 @@ mitjs
 [Open project files]
 0=mitjs\index.css
 1=mitjs\index.html
+2=mitjs\index.js
 [Selected Project Files]
 Main=
-Selected=mitjs\index.html
+Selected=mitjs\index.js
 [mitjs\index.css]
 TopLine=1
 Caret=1,1
 [mitjs\index.html]
 TopLine=1
-Caret=1,1
+Caret=52,7
+[mitjs\index.js]
+TopLine=1
+Caret=46,7

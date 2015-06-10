@@ -21,9 +21,17 @@ praxis
 		praxis\index.js
 [Open project files]
 0=praxis\index.html
+1=praxis\index.css
+2=praxis\index.js
 [Selected Project Files]
 Main=
-Selected=praxis\index.html
+Selected=praxis\index.js
 [praxis\index.html]
+TopLine=1
+Caret=1,1
+[praxis\index.css]
+TopLine=1
+Caret=1,1
+[praxis\index.js]
 TopLine=1
 Caret=1,1

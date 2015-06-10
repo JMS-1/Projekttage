@@ -21,9 +21,17 @@ erzeugen
 		erzeugen\index.js
 [Open project files]
 0=erzeugen\index.html
+1=erzeugen\index.css
+2=erzeugen\index.js
 [Selected Project Files]
 Main=
-Selected=erzeugen\index.html
+Selected=erzeugen\index.js
 [erzeugen\index.html]
+TopLine=1
+Caret=1,1
+[erzeugen\index.css]
+TopLine=1
+Caret=1,1
+[erzeugen\index.js]
 TopLine=1
 Caret=1,1

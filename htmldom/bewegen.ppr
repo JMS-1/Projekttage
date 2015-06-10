@@ -15,10 +15,23 @@ ProjectFilesOnly=0
 Extensions=*.*
 [Project tree]
 bewegen
-	-bewegen
+	+bewegen
 		bewegen\index.css
 		bewegen\index.html
 		bewegen\index.js
 [Open project files]
+0=bewegen\index.css
+1=bewegen\index.html
+2=bewegen\index.js
 [Selected Project Files]
 Main=
+Selected=bewegen\index.js
+[bewegen\index.css]
+TopLine=1
+Caret=1,1
+[bewegen\index.html]
+TopLine=1
+Caret=50,13
+[bewegen\index.js]
+TopLine=1
+Caret=5,9

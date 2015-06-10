@@ -1,7 +1,7 @@
-﻿.bild {
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
-    background: url("../../floater.png") no-repeat left top;
-    background-size: 100%;
+.bild {
+	margin-top: 20px;
+	width: 100px;
+	height: 100px;
+	background: url("../../floater.png") no-repeat left top;
+	background-size: 100%;
 }
