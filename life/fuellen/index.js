@@ -1,21 +1,17 @@
-﻿// Jede Zelle erhält die Information, ob sie lebt oder tot ist
+// Jede Zelle erhält die Information, ob sie lebt oder tot ist
 var cssTot = 'zelle';
 var cssLebt = cssTot + ' lebt';
 
 // Die folgenden Variablen werden gesetzt, sobald die Seite geladen ist
-var schritteInfo, intervall, alleZellen, zeilen, spalten
+var alleZellen
 
 // Diese Methode wird Aufgerufen, wenn die HTML Seite komplett geladen ist
 function starten() {
 
-    // Die wichtigsten visuellen Elemente ermitteln
-    schritteInfo = document.getElementById('schritte');
-    intervall = document.getElementById('interval');
-
     // Die Spielfeld und dessen Größe auslesen
-    var spielfeld = document.querySelector('#spielfeld');
-    zeilen = parseInt(spielfeld.getAttribute('data-zeilen'));
-    spalten = parseInt(spielfeld.getAttribute('data-spalten'));
+    var spielfeld = document.getElementById('spielfeld');
+    var zeilen = parseInt(spielfeld.getAttribute('data-zeilen'));
+    var spalten = parseInt(spielfeld.getAttribute('data-spalten'));
 
     // Tabelle zusammenbauen
     var html = '';
@@ -34,7 +30,7 @@ function starten() {
 
     // Hier merken wir uns alle Zellen
     alleZellen = spielfeld.querySelectorAll('.' + cssTot);
-};
+}
 
 // Wenn eine Zelle angeklickt wird ändert sie ihren Zustand
 function zelleUmschalten(zelle) {
@@ -48,7 +44,7 @@ function spielfeldLoeschen() {
     for (var zs = 0; zs < alleZellen.length; zs++) {
         alleZellen[zs].className = cssTot;
     };
-};
+}
 
 // Das Spielfeld zufällig füllen
 function spielfeldFuellen() {
@@ -58,4 +54,4 @@ function spielfeldFuellen() {
 
         zelle.className = zustand;
     };
-};
+}

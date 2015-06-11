@@ -21,9 +21,17 @@ fortlaufend
 		fortlaufend\index.js
 [Open project files]
 0=fortlaufend\index.html
+1=fortlaufend\index.css
+2=fortlaufend\index.js
 [Selected Project Files]
 Main=
 Selected=fortlaufend\index.html
 [fortlaufend\index.html]
 TopLine=1
+Caret=26,17
+[fortlaufend\index.css]
+TopLine=1
 Caret=1,1
+[fortlaufend\index.js]
+TopLine=65
+Caret=46,12

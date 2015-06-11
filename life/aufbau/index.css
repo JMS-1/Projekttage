@@ -1,16 +1,14 @@
-﻿div.spielfeld {
-    display: table;
-    border-collapse:collapse;
+div.spielfeld {
+	display: table;
+	border-collapse: collapse;
 }
-
 div.zeile {
-    display: table-row;
+	display: table-row;
 }
-
 div.zelle {
-    display: table-cell;
-    border: 1px solid black;
-    background-color: lightgreen;
-    width: 12px;
-    height: 12px;
+	display: table-cell;
+	border: 1px solid black;
+	background-color: lightgreen;
+	width: 12px;
+	height: 12px;
 }

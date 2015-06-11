@@ -21,9 +21,17 @@ umschalten
 		umschalten\index.js
 [Open project files]
 0=umschalten\index.html
+1=umschalten\index.css
+2=umschalten\index.js
 [Selected Project Files]
 Main=
 Selected=umschalten\index.html
 [umschalten\index.html]
 TopLine=1
 Caret=1,1
+[umschalten\index.css]
+TopLine=1
+Caret=1,1
+[umschalten\index.js]
+TopLine=1
+Caret=2,27

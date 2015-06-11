@@ -28,10 +28,10 @@ Main=
 Selected=fuellen\index.js
 [fuellen\index.html]
 TopLine=1
-Caret=1,1
+Caret=26,15
 [fuellen\index.css]
 TopLine=1
 Caret=1,1
 [fuellen\index.js]
-TopLine=3
-Caret=1,1
+TopLine=9
+Caret=2,33

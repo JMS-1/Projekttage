@@ -21,9 +21,17 @@ algorithmus
 		algorithmus\index.js
 [Open project files]
 0=algorithmus\index.html
+1=algorithmus\index.css
+2=algorithmus\index.js
 [Selected Project Files]
 Main=
-Selected=algorithmus\index.html
+Selected=algorithmus\index.js
 [algorithmus\index.html]
 TopLine=1
+Caret=26,16
+[algorithmus\index.css]
+TopLine=1
 Caret=1,1
+[algorithmus\index.js]
+TopLine=43
+Caret=1,84

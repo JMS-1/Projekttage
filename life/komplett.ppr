@@ -21,9 +21,17 @@ komplett
 		komplett\index.js
 [Open project files]
 0=komplett\index.html
+1=komplett\index.css
+2=komplett\index.js
 [Selected Project Files]
 Main=
 Selected=komplett\index.html
 [komplett\index.html]
 TopLine=1
+Caret=26,17
+[komplett\index.css]
+TopLine=1
 Caret=1,1
+[komplett\index.js]
+TopLine=1
+Caret=46,16

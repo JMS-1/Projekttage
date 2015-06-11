@@ -1,19 +1,15 @@
-﻿// Jede Zelle erhält die Information, ob sie lebt oder tot ist
+// Jede Zelle erhält die Information, ob sie lebt oder tot ist
 var cssTot = 'zelle';
 var cssLebt = cssTot + ' lebt';
 
 // Die folgenden Variablen werden gesetzt, sobald die Seite geladen ist
-var schritteInfo, intervall, alleZellen, zeilen, spalten
+var alleZellen, zeilen, spalten
 
 // Diese Methode wird Aufgerufen, wenn die HTML Seite komplett geladen ist
 function starten() {
 
-    // Die wichtigsten visuellen Elemente ermitteln
-    schritteInfo = document.getElementById('schritte');
-    intervall = document.getElementById('interval');
-
     // Die Spielfeld und dessen Größe auslesen
-    var spielfeld = document.querySelector('#spielfeld');
+    var spielfeld = document.getElementById('spielfeld');
     zeilen = parseInt(spielfeld.getAttribute('data-zeilen'));
     spalten = parseInt(spielfeld.getAttribute('data-spalten'));
 
@@ -71,20 +67,23 @@ function naechsteGeneration() {
     };
 
     // Und nun nur noch abhängig von der Anzahl der Nachbarn den Zustand der Zelle verändern - oder belassen, wie er ist
-    for (var zs = 0; zs < vorher.length; zs++) {
-        var zelle = vorher[zs];
-
-        if (zelle.nachbarn == 3) {
-            // Nur ändern wenn nötig
+    vorher.forEach(function(zelle) {
+        switch (zelle.nachbarn) {
+          case 2:
+            // Bleibt wie es ist
+            break;
+          case 3:
+            // Kann zum Leben erweckt werden
             if (!zelle.lebt)
                 zelle.zelle.className = cssLebt;
-        }
-        else if (zelle.nachbarn != 2) {
-            // Nur ändern wenn nötig
+                
+            break;
+          default:
+            // Muss abgetötet werden
             if (zelle.lebt)
                 zelle.zelle.className = cssTot;
         }
-    };
+    });
 
     // Auf Wunsch des Anwenders automatisch die nächste Generation berechnen
     if (automatisch)
