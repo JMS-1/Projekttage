@@ -1,8 +1,5 @@
-﻿// Die einzelnen Zustände der Felder
+// Die einzelnen Zustände der Felder
 var zelle = 'zelle';
-var nichtGeprüft = zelle + ' unbenutzt';
-var daneben = zelle + ' daneben';
-var treffer = zelle + ' treffer';
 var versenkt = zelle + ' versenkt';
 
 // Diese Variablen werden nach dem Laden der Seite gefüllt.

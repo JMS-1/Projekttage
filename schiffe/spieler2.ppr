@@ -21,9 +21,17 @@ spieler2
 		spieler2\index.js
 [Open project files]
 0=spieler2\index.html
+1=spieler2\index.css
+2=spieler2\index.js
 [Selected Project Files]
 Main=
-Selected=spieler2\index.html
+Selected=spieler2\index.js
 [spieler2\index.html]
-TopLine=1
+TopLine=140
 Caret=1,1
+[spieler2\index.css]
+TopLine=57
+Caret=1,1
+[spieler2\index.js]
+TopLine=115
+Caret=73,81

@@ -15,17 +15,33 @@ ProjectFilesOnly=0
 Extensions=*.*
 [Project tree]
 komplett2
-	-komplett2
+	+komplett2
 		komplett2\controller.js
 		komplett2\index.css
 		komplett2\index.html
 		komplett2\index.js
 		komplett2\modelle.js
 [Open project files]
-0=Neu1.txt
+0=komplett2\index.css
+1=komplett2\index.html
+2=komplett2\index.js
+3=komplett2\modelle.js
+4=komplett2\controller.js
 [Selected Project Files]
 Main=
-Selected=Neu1.txt
-[Neu1.txt]
+Selected=komplett2\modelle.js
+[komplett2\index.css]
+TopLine=28
+Caret=1,1
+[komplett2\index.html]
+TopLine=162
+Caret=1,1
+[komplett2\index.js]
 TopLine=1
 Caret=1,1
+[komplett2\modelle.js]
+TopLine=255
+Caret=9,278
+[komplett2\controller.js]
+TopLine=13
+Caret=44,112

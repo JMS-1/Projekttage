@@ -1,4 +1,4 @@
-﻿// Erstellt die Verbindung zwischen einer Zelle des Spielfelds und der zugehörigen Anzeige
+// Erstellt die Verbindung zwischen einer Zelle des Spielfelds und der zugehörigen Anzeige
 function ZelleController(modell, anzeige, spielfeld) {
     // Zeigt den Zustand der Zelle über CSS Klassen an
     function zustandAnzeigen() {
@@ -109,7 +109,6 @@ function SpielfeldController(modell, anzeige, auswahl, start, neustart, tippScha
     }
 
     // Oberfläche mit dem Modell verbinden
-
     start.onclick = function () {
         modell.spielStarten();
     }

@@ -25,13 +25,13 @@ mittipp
 2=mittipp\index.css
 [Selected Project Files]
 Main=
-Selected=mittipp\index.html
+Selected=mittipp\index.js
 [mittipp\index.html]
-TopLine=1
+TopLine=232
 Caret=1,1
 [mittipp\index.js]
-TopLine=1
-Caret=1,1
+TopLine=145
+Caret=12,90
 [mittipp\index.css]
-TopLine=1
+TopLine=57
 Caret=1,1

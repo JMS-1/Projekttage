@@ -21,9 +21,17 @@ aufbau
 		aufbau\index.js
 [Open project files]
 0=aufbau\index.html
+1=aufbau\index.css
+2=aufbau\index.js
 [Selected Project Files]
 Main=
 Selected=aufbau\index.html
 [aufbau\index.html]
+TopLine=135
+Caret=1,1
+[aufbau\index.css]
 TopLine=1
 Caret=1,1
+[aufbau\index.js]
+TopLine=1
+Caret=1,3

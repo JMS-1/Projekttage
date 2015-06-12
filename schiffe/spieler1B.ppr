@@ -1,0 +1,37 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\Backup\Software\Current\GIT\Projekttage\schiffe\spieler1B
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+spieler1B
+	+spieler1B
+		spieler1B\index.css
+		spieler1B\index.html
+		spieler1B\index.js
+[Open project files]
+0=spieler1B\index.css
+1=spieler1B\index.html
+2=spieler1B\index.js
+[Selected Project Files]
+Main=
+Selected=spieler1B\index.js
+[spieler1B\index.css]
+TopLine=53
+Caret=2,82
+[spieler1B\index.html]
+TopLine=164
+Caret=1,1
+[spieler1B\index.js]
+TopLine=159
+Caret=58,11

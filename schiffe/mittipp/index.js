@@ -1,4 +1,4 @@
-﻿// Die einzelnen Zustände der Felder
+// Die einzelnen Zustände der Felder
 var zelle = 'zelle';
 var nichtGeprüft = zelle + ' unbenutzt';
 var daneben = zelle + ' daneben';
@@ -87,7 +87,7 @@ function starten() {
     starter.setAttribute('disabled', 'disabled');
     tippSchalter.setAttribute('disabled', 'disabled');
 
-    // Tips ausblenden
+    // Tipp ausblenden
     tippAnzeige.className = 'keinTipp';
     tipp.textContent = 0;
 

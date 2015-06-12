@@ -1,120 +1,96 @@
-﻿html {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+html {
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
-
 .spielfeld {
-    display: table;
-    border-collapse: collapse;
-    width: 500px;
-    height: 500px;
+	display: table;
+	border-collapse: collapse;
+	width: 500px;
+	height: 500px;
 }
-
 .zeile {
-    display: table-row;
+	display: table-row;
 }
-
 .zelle {
-    display: table-cell;
-    border: 1px solid black;
-    min-height: 1em;
-    min-width: 1em;
+	display: table-cell;
+	border: 1px solid black;
+	min-height: 1em;
+	min-width: 1em;
 }
-
 .spaltennummer, .zeilennummer {
-    border: none;
-    text-align: center;
-    vertical-align: middle;
+	border: none;
+	text-align: center;
+	vertical-align: middle;
 }
-
 .unbenutzt {
-    background-color: lightseagreen;
+	background-color: lightseagreen;
 }
-
 .daneben {
-    background-color: yellow;
+	background-color: yellow;
 }
-
 .treffer {
-    background-color: orangered;
+	background-color: orangered;
 }
-
 .versenkt {
-    background-color: red;
+	background-color: red;
 }
-
 .schiffe {
-    margin: 10px;
-    padding: 10px;
-    border: 3px solid black;
+	margin: 10px;
+	padding: 10px;
+	border: 3px solid black;
 }
-
 .spielfeld, .schiffe {
-    float: left;
+	float: left;
 }
-
 .container {
-    overflow: hidden;
+	overflow: hidden;
 }
-
 .leer {
-    border: none;
+	border: none;
 }
-
 .pool {
-    border: 1px dashed red;
-    width: 200px;
-    padding: 2px;
-    margin: 2px;
-    float: left;
+	border: 1px dashed red;
+	width: 200px;
+	padding: 2px;
+	margin: 2px;
+	float: left;
 }
-
 .starter {
-    margin-top: 10px;
-    clear: left;
+	margin-top: 10px;
+	clear: left;
 }
-
 .hoehe1 {
-    margin-bottom: 10px;
-    height: 30px;
+	margin-bottom: 10px;
+	height: 30px;
 }
-
 .hoehe2 {
-    height: 60px;
+	height: 60px;
 }
-
 .hoehe3 {
-    height: 90px;
+	height: 90px;
 }
-
 .hoehe4 {
-    height: 120px;
+	height: 120px;
 }
-
 .hoehe5 {
-    height: 150px;
+	height: 150px;
 }
-
 .breite1 {
-    margin-left: 10px;
-    float: left;
-    width: 30px;
+	margin-left: 10px;
+	float: left;
+	width: 30px;
 }
-
 .breite2 {
-    width: 60px;
+	width: 60px;
 }
-
 .breite3 {
-    width: 90px;
+	width: 90px;
 }
-
 .breite4 {
-    width: 120px;
+	width: 120px;
 }
-
 .breite5 {
-    width: 150px;
+	width: 150px;
 }
