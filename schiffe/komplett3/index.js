@@ -1,3 +1,7 @@
+// Einige CSS Klassennamen, die wir im Code verwenden
+var unsichtbar = 'unsichtbar';
+var legendeSichtbar = 'legende';
+
 // Beschreibt den Inhalt einer Zelle.
 function ZellInhalt(zeile, spalte) {
     this.schiff = null;
@@ -6,8 +10,6 @@ function ZellInhalt(zeile, spalte) {
 }
 
 // Die einzelnen Zustände der Felder
-var unsichtbar = 'unsichtbar';
-var legendeSichtbar = 'legende';
 var zelle = 'zelle';
 var nichtGeprüft = zelle + ' unbenutzt';
 var versenkt = zelle + ' versenkt';
@@ -19,7 +21,7 @@ var alleZellen, spielfeld, auswahl, starten, legende, versuche, neustart, tippSc
 
 // Wird aufgerufen, sobald die Seite komplett geladen ist.
 function starten() {
-    // Wir suchen unser Spielfeld
+    // Was wird so an DOM Elementen brauchen
     tippSchalter = document.getElementById('tippSchalter');
     tippAnzeige = document.getElementById('tippAnzeige');
     starten = document.getElementById('aufbauFertig');
@@ -29,7 +31,7 @@ function starten() {
     legende = document.getElementById('legende');
     tipp = document.getElementById('tipp');
 
-    // Darin alle relevanten Zellen
+    // Alle relevanten Zellen auf dem Spielfeld
     alleZellen = spielfeld.querySelectorAll('.' + zelle + ':not(.spaltennummer):not(.zeilennummer)');
 
     // Nur eine kleine Sicherheitsprüfung, ob wir das auch alles richtig gemacht haben
@@ -67,6 +69,7 @@ function spieler2() {
     for (var i = 0; i < alleZellen.length; i++) {
         var eineZelle = alleZellen[i];
 
+        // Hier nur die optischen Einstellungen
         eineZelle.className = nichtGeprüft;
         eineZelle.onclick = aufTrefferPrüfen;
     }
@@ -83,9 +86,11 @@ function spieler2() {
 
 // Wählt eine Zelle als linke obere Ecke eines zu versteckenden Schiffs aus.
 function schiffVerstecken(ev) {
+    // Wir müssen beachten, dass this in der onclick Funktion einen neuen Wert erhält, also: zwischenspeichern
     var dieZelle = this;
-    var meinePosition = dieZelle.getBoundingClientRect();
 
+    // Die Auswahlliste oben links in die Zelle setzen
+    var meinePosition = dieZelle.getBoundingClientRect();
     auswahl.style.left = (meinePosition.left + 4) + "px";
     auswahl.style.top = (meinePosition.top + 4) + "px";
     auswahl.className = '';
@@ -93,6 +98,7 @@ function schiffVerstecken(ev) {
     // Auswahl vorbereiten
     for (var i = 0; i < auswahl.childNodes.length; i++)
         auswahl.childNodes[i].onclick = function () {
+            // Auf jeden Fall wird die Auswahlliste ausgeblendet
             auswahl.className = unsichtbar;
 
             // Welches Schiff wurde zum verstecken ausgesucht?
