@@ -1,0 +1,33 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\Backup\Software\Current\GIT\Projekttage\schiffe\komplett3
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.*
+[Project tree]
+komplett3
+	+komplett3
+		komplett3\index.css
+		komplett3\index.html
+		komplett3\index.js
+[Open project files]
+0=komplett3\index.css
+1=komplett3\index.html
+[Selected Project Files]
+Main=
+Selected=komplett3\index.html
+[komplett3\index.css]
+TopLine=37
+Caret=1,1
+[komplett3\index.html]
+TopLine=1
+Caret=1,1

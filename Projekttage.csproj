@@ -137,6 +137,9 @@
     <Content Include="cssonly\menu\index.css" />
     <Content Include="cssonly\menu\index.html" />
     <Content Include="floater.png" />
+    <Content Include="schiffe\komplett3\index.css" />
+    <Content Include="schiffe\komplett3\index.html" />
+    <Content Include="schiffe\komplett3\index.js" />
     <Content Include="schiffe\spieler1C\index.css" />
     <Content Include="schiffe\spieler1C\index.html" />
     <Content Include="schiffe\spieler1C\index.js" />
