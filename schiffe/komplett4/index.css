@@ -1,0 +1,64 @@
+html {
+	position: absolute;
+}
+body {
+	width: 100%;
+}
+.spielfeld {
+	display: table;
+	border-collapse: collapse;
+	width: 500px;
+	height: 500px;
+}
+.zeile {
+	display: table-row;
+}
+.zelle {
+	display: table-cell;
+	border: 1px solid black;
+	min-height: 1em;
+	min-width: 1em;
+}
+.spaltennummer, .zeilennummer {
+	border: none;
+	text-align: center;
+	vertical-align: middle;
+}
+.unbenutzt {
+	background-color: lightseagreen;
+}
+.daneben {
+	background-color: yellow;
+}
+.treffer {
+	background-color: orangered;
+}
+.versenkt {
+	background-color: red;
+}
+.unsichtbar {
+	display: none;
+}
+.aktionen {
+	margin: 10px 0px;
+}
+#auswahl {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: white;
+	border: 1px solid black;
+}
+#auswahl > div {
+	white-space: nowrap;
+	margin: 10px;
+}
+#auswahl > div:hover {
+	background-color: lightblue;
+}
+#tippAnzeige:not(:checked) ~ #tipp {
+	display: none;
+}
+/* Das braucht wohl der Internet Explorer 11 */
+#tippAnzeige:checked ~ #tipp {
+}
