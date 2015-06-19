@@ -305,8 +305,9 @@ function aufTrefferPrüfen(zelle) {
         if ((zeile >= 0) && (zeile <= 9))
             for (var spalte = zelle.spalte - 1; spalte <= zelle.spalte + 1; spalte++)
                 if ((spalte >= 0) && (spalte <= 9))
-                    if (spielfeld[10 * zeile + spalte].schiff != null)
-                        umfeld++;
+                    if ((zeile != zelle.zeile) || (spalte != zelle.spalte))
+                        if (spielfeld[10 * zeile + spalte].schiff != null)
+                            umfeld++;
 
     // Diese Zahl auch beim wiederholten Klicken straffrei anzeigen
     tipp.textContent = '(Anzahl der Treffer in der Umgebung: ' + umfeld + ')';
