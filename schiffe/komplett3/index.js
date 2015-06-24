@@ -91,8 +91,8 @@ function schiffVerstecken(ev) {
 
     // Die Auswahlliste oben links in die Zelle setzen
     var meinePosition = dieZelle.getBoundingClientRect();
-    auswahl.style.left = (meinePosition.left + 4) + "px";
-    auswahl.style.top = (meinePosition.top + 4) + "px";
+    auswahl.style.left = (meinePosition.left + window.pageXOffset + 4) + "px";
+    auswahl.style.top = (meinePosition.top + window.pageYOffset + 4) + "px";
     auswahl.className = '';
 
     // Auswahl vorbereiten
